@@ -1,6 +1,6 @@
 {
 	"name": "randoms",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Generate random numbers, strings, arrays and objects",
 	"keywords": [],
 	"homepage": "https://github.com/mpneuried/randoms",
@@ -22,10 +22,7 @@
 		"node": ">= &gt;= 4.0.0"
 	},
 	"license": "MIT",
-	"dependencies": {
-		
-		"mpbasic": "0.0.x"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"should": "8.x",
 		"grunt": "1.x",
