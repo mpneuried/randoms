@@ -1,0 +1,39 @@
+{
+	"name": "randoms",
+	"version": "0.0.1",
+	"description": "Generate random numbers, strings, arrays and objects",
+	"keywords": [],
+	"homepage": "https://github.com/mpneuried/randoms",
+	"bugs": "https://github.com/mpneuried/randoms/issues",
+	"author": {
+		"name": "mpneuried",
+		"email": "",
+		"url": "https://github.com/mpneuried/randoms"
+	},
+	"main": "./index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mpneuried/randoms.git"
+	},
+	"scripts": {
+		"test": "mocha -r should -t 3000 test/main.js"
+	},
+	"engines": {
+		"node": ">= &gt;= 4.0.0"
+	},
+	"license": "MIT",
+	"dependencies": {
+		
+		"mpbasic": "0.0.x"
+	},
+	"devDependencies": {
+		"should": "8.x",
+		"grunt": "1.x",
+		"grunt-contrib-watch": "1.0",
+		"grunt-contrib-coffee": "1.x",
+		"grunt-contrib-clean": "1.x",
+		"grunt-include-replace": "*",
+		"grunt-mocha-cli": "2.x",
+		"grunt-newer": "1.x"
+	}
+}
