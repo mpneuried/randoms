@@ -21,7 +21,7 @@ Generate random numbers, strings, arrays and objects
 ```js
   // TODO init code
 ```
-
+**DUMMY**
 **Options** 
 
 - **foo** : *( `String` required )* TODO option description
@@ -29,7 +29,7 @@ Generate random numbers, strings, arrays and objects
 
 ## Todos
 
- * implement test cases to check for correct template generation.
+ * Write readme
 
 ## Testing
 
@@ -72,6 +72,7 @@ To run the tests through the defined versions run the following command:
 ```
 	dockertests/run.sh
 ```
+
 
 
 ## Release History
