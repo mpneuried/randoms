@@ -102,9 +102,13 @@ _ret.array.string.alphaNum = ( size=randRange(1,13), len=randRange(1,13) )->
 	return randomarray( size, ->return _ret.string.alphaNum( len ) )
 _ret.array.string.any = ( size=randRange(1,13), len=randRange(1,13) )->
 	return randomarray( size, ->return _ret.string.any( len ) )
-
 _ret.array.obj = ( size=randRange(1,13), lowVal=0, highVal=100 )->
 	return randomarray( size, ->return _ret.number( lowVal, highVal ) )
+_ret.array.pick = ( array )->
+	if not array?.length
+		throw new Error( "ENOTARRAY" )
+	_idx = randRange( 0,array.length-1 )
+	return array[ _idx ]
 	
 _ret.obj = ( keyCount=randRange(1,13), maxKeyLength=randRange(2,13), genFn )->
 	return randomobj( 0, { keyCount: keyCount, maxKeyLength: maxKeyLength }, genFn )

@@ -177,7 +177,7 @@ describe "----- randoms TESTS -----", ->
 			return
 		
 		it "random array.string.any", ->
-			randoms.array.string.alphaNum(20, 50)
+			randoms.array.string.any(20, 50)
 				.should.be.instanceof(Array)
 				.and.matchEach (_v)->
 					_v.
@@ -185,6 +185,13 @@ describe "----- randoms TESTS -----", ->
 						.and.length(50)
 					return
 				.and.have.length(20)
+			return
+		
+		it "random array.pick", ->
+			_a = [0,1,2,3,4,5,6,7,8,9]
+			randoms.array.pick(_a)
+				.should.be.instanceof(Number)
+				.and.be.oneOf( _a )
 			return
 			
 	describe "Object", ->

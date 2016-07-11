@@ -1,6 +1,6 @@
 {
 	"name": "randoms",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Generate random numbers, strings, arrays and objects",
 	"keywords": [],
 	"homepage": "https://github.com/mpneuried/randoms",

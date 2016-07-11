@@ -78,8 +78,9 @@ To run the tests through the defined versions run the following command:
 ## Release History
 |Version|Date|Description|
 |:--:|:--:|:--|
-|0.0.2|2016-6-23|Removed dependency|
-|0.0.1|2016-6-23|Initial commit|
+|0.0.3|2016-07-11|Added array.pick method|
+|0.0.2|2016-06-23|Removed dependency|
+|0.0.1|2016-06-23|Initial commit|
 
 [![NPM](https://nodei.co/npm-dl/randoms.png?months=6)](https://nodei.co/npm/randoms/)
 
