@@ -16,20 +16,24 @@ Generate random numbers, strings, arrays and objects
   npm install randoms
 ```
 
-## Initialize
+## Usage
 
 ```js
-  // TODO init code
+  var randoms = require( "randoms" );
+  
+  randoms.string( 15 ) // a random string of length 15
+  randoms.number( 0,10 ) // a random int between 0 to 10
+  randoms.string.upper( 10 ) // a random uppercase string of length 10
+  randoms.array() // a array with random data (number, string, array, object)
+  randoms.array.pick( [ 13, 23, 42, 666 ] ) // pick a random element aof the given array
+  randoms.array.number( 13, 23, 42 ) // a array of 13 integers between 23,42
+  randoms.obj.string.lower( 13, 666 ) // an object with 13 keys containing lowercase strings of length 666
 ```
-**DUMMY**
-**Options** 
 
-- **foo** : *( `String` required )* TODO option description
-- **bar** : *( `Number` optional: default = `123` )* TODO option description
+## Methods
 
-## Todos
-
- * Write readme
+Currently the detailed readme is an open TODO.
+See the [source code](https://github.com/mpneuried/randoms/blob/master/_src/lib/main.coffee) or the [test script](https://github.com/mpneuried/randoms/blob/master/_src/test/main.coffee) for details.
 
 ## Testing
 
