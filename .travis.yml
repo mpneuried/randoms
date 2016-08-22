@@ -14,7 +14,7 @@ node_js:
   - 5.2
   - 6.0
   - 6.1
-  - nodejs
+  - node
   - iojs
 before_script:
   - "npm install -g mocha grunt-cli"
