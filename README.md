@@ -19,21 +19,26 @@ Generate random numbers, strings, arrays and objects
 ## Usage
 
 ```js
-  var randoms = require( "randoms" );
+  import randoms from "randoms";
+  import randomsString, { strUpper as randomsStringUpper } from "randoms/str";
+  import randomsNumber from "randoms/num";
+  import randomsArray, { arrayPick, num as randomArrayNum } from "randoms/array";
+  import { strLower as randomObjectStringLower } from "randoms/object";
   
-  randoms.string( 15 ) // a random string of length 15
-  randoms.number( 0,10 ) // a random int between 0 to 10
-  randoms.string.upper( 10 ) // a random uppercase string of length 10
-  randoms.array() // a array with random data (number, string, array, object)
-  randoms.array.pick( [ 13, 23, 42, 666 ] ) // pick a random element aof the given array
-  randoms.array.number( 13, 23, 42 ) // a array of 13 integers between 23,42
-  randoms.obj.string.lower( 13, 666 ) // an object with 13 keys containing lowercase strings of length 666
+  randoms() // generate  random data. Could be a string, number, object or array
+  randomsString( 15 ) // a random string of length 15
+  randomsNumber( 0,10 ) // a random int between 0 to 10
+  randomsStringUpper( 10 ) // a random uppercase string of length 10
+  randomsArray() // a array with random data (number, string, array, object)
+  arrayPick( [ 13, 23, 42, 666 ] ) // pick a random element aof the given array
+  randomArrayNum( 13, 23, 42 ) // a array of 13 integers between 23,42
+  randomObjectStringLower( 13, 666 ) // an object with 13 keys containing lowercase strings of length 666
 ```
 
 ## Methods
 
 Currently the detailed readme is an open TODO.
-See the [source code](https://github.com/mpneuried/randoms/blob/master/_src/lib/main.coffee) or the [test script](https://github.com/mpneuried/randoms/blob/master/_src/test/main.coffee) for details.
+See the [test script](https://github.com/mpneuried/randoms/blob/master/test/main.ts) for details and examples.
 
 ## Testing
 
@@ -47,41 +52,13 @@ To start the test just call
 or
 
 ```
-	grunt test
+	npm run test
 ```
-
-If you want to be more precice use the mocha cli
-
-```
-	mocha -R nyan -t 1337 test/main.js
-```
-
-### Docker-Tests
-
-If you want to test your module against multiple node versions you can use the docker tests.
-
-**Preparation**
-
-```sh
-	# make sure you installed all dependencies
-	npm install
-	# build the files
-	grunt build
-```
-
-**Run**
-
-To run the tests through the defined versions run the following command:
-
-```
-	dockertests/run.sh
-```
-
-
 
 ## Release History
 |Version|Date|Description|
 |:--:|:--:|:--|
+|1.0.0|2018-11-28|Refactored code from coffeescript to typescript|
 |0.0.3|2016-07-11|Added array.pick method|
 |0.0.2|2016-06-23|Removed dependency|
 |0.0.1|2016-06-23|Initial commit|

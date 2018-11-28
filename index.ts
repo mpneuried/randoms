@@ -4,7 +4,10 @@ import randRange from "./num"
 import { randomObj } from "./object"
 import randomString from "./str"
 
-export const randomData = (depth: number = 0, opt: IRandomDataOpt = {}): number | string | object => {
+type TRandom = number | string | object
+type TRandoms = TRandom | TRandom[]
+
+export const randomData = (depth: number = 0, opt: IRandomDataOpt = {}): TRandoms => {
     let idx = randRange(1, 4)
     if (depth >= (opt.maxDepth != null ? opt.maxDepth : 2)) {
         idx = randRange(1, 2)
