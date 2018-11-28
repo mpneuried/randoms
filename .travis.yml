@@ -2,20 +2,13 @@ os:
   - linux
   - osx
 language: node_js
-
 node_js:
-  - 0.10
-  - 0.12
-  - 4.0
-  - 4.1
-  - 4.2
-  - 5.0
-  - 5.1
-  - 5.2
-  - 6.0
-  - 6.1
-  - node
-  - iojs
-before_script:
-  - "npm install -g mocha grunt-cli"
-  - "grunt build"
+  - "6"
+  - "8"
+  - "10"
+  - "lts"
+  - "node"
+
+install: npm install
+script: npm test
+after_success: npm run coverage

@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "preserveConstEnums": true,
+        "declaration": true,
+        "rootDir": "."
+    },
+    "files": [
+        "index.ts",
+        "str.ts",
+        "num.ts",
+        "array.ts",
+        "object.ts",
+        "utils.ts",
+    ],
+    "exclude": [
+        "node_modules",
+        "dockertests",
+        "test",
+        "./dist/"
+    ]
+}

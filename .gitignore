@@ -18,6 +18,9 @@ config*.json
 deploy.json
 *.js
 /node_modules
+dist/
+coverage/
+.nyc*
 
 *.env
 !*.env_skeleton

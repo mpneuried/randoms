@@ -3,11 +3,9 @@
 # Test against these versions of Node.js.
 environment:
   matrix:
-    - nodejs_version: "0.10"
-    - nodejs_version: "0.12"
-    - nodejs_version: "4"
-    - nodejs_version: "5"
     - nodejs_version: "6"
+    - nodejs_version: "8"
+    - nodejs_version: "10"
 
 pull_requests:
   do_not_increment_build_number: true
@@ -22,8 +20,7 @@ install:
   - ps: Install-Product node $env:nodejs_version
   # Typical npm stuff. Use msvs 2013 for the hiredis parser
   - npm install
-  - npm install -g grunt-cli mocha
-  - grunt build
+  - npm test
 
 # Post-install test scripts.
 test_script:
