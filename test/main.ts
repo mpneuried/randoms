@@ -225,7 +225,7 @@ describe("----- randoms TESTS -----", () => {
         })
 
         it("random obj length with short keys", () => {
-            const rObj = randomObject(30, 2)
+            const rObj = randomObject(30, 4)
             rObj.should.be.instanceof(Object)
             Object.keys(rObj).should.length(30)
         })
@@ -262,8 +262,8 @@ describe("----- randoms TESTS -----", () => {
                         .and.within(5, 10)
                 })
             Object.keys(rObj)
-                .should.matchEach((_k) => {
-                    _k.should.be.instanceof(String)
+                .should.matchEach((key) => {
+                    key.should.be.instanceof(String)
                         .and.have.property("length")
                         .with.within(2, 100)
                 }).and.length(20)
