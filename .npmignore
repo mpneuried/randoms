@@ -10,4 +10,11 @@ deploy.json
 .editorconfig
 .travis.yml
 *.env*
-coffeelint.json
+tslint.json
+tsconfig.json
+coverage/
+.nyc*
+*.ts
+!dist/*.d.ts
+dockertests/
+*.yml

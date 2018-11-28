@@ -1,6 +1,6 @@
 {
     "name": "randoms",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Generate random numbers, strings, arrays and objects",
     "keywords": [],
     "homepage": "https://github.com/mpneuried/randoms",
@@ -19,7 +19,8 @@
         "test": "nyc mocha -r ts-node/register test/main.ts",
         "compile": "rm -rf dist; tsc -d --removeComments --strict --outDir ./dist *.ts",
         "coverage": "nyc report --reporter=text-lcov | coveralls",
-        "lint": "tslint -c tslint.json --project ."
+        "lint": "tslint -c tslint.json --project .",
+        "check": "irish-pub"
     },
     "engines": {
         "node": "> 6"
@@ -32,6 +33,7 @@
         "@types/node": "^10.3.6",
         "@types/should": "^13.0.0",
         "coveralls": "^3.0.2",
+        "irish-pub": "^0.2.0",
         "istanbul": "^0.4.5",
         "mocha": "^5.2.0",
         "node-dev": "^3.1.3",

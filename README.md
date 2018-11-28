@@ -58,6 +58,7 @@ or
 ## Release History
 |Version|Date|Description|
 |:--:|:--:|:--|
+|1.0.1|2018-11-28|Optimized files published to npm|
 |1.0.0|2018-11-28|Refactored code from coffeescript to typescript|
 |0.0.3|2016-07-11|Added array.pick method|
 |0.0.2|2016-06-23|Removed dependency|
